@@ -1,12 +1,12 @@
-title: Your awesome title
+title: 'Omers proffessional photography'
 author:
-  name: 'Github User'
-  email: 'github@example.com'
+  name: 'Omer Dogru'
+  email: 'omerdogru15@hotmail.com'
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-
+baseurl: ''
 excerpts:
   # Displays or hides post excerpts from home layout post listing.
   show: true
@@ -19,7 +19,7 @@ excerpts:
 bootstrap:
   # Theme date format
   # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
-  date_format: "%b %-d, %Y"
+  date_format: "%-d %b, %Y"
 
   # If you want to link only specific pages in your header, uncomment
   # this and add the path to the page *files* in order as they should show up
@@ -44,6 +44,14 @@ bootstrap:
 
 # Build settings
 theme: jekyll-bootstrap-theme
-plugins:
+plugins: 
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-figure
+  - jekyll-gist
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
