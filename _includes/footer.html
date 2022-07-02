@@ -13,15 +13,16 @@
           {%- endif %}
         </ul>
         {%- endif %}
+
+      </div>
+      <div class="col">
         <p class="feed-subscribe">
           <a class="btn btn-orange text-white" href="{{ 'feed.xml' | relative_url }}">
             <i class="bi bi-rss-fill"></i>
             <span>Subscribe</span>
           </a>
         </p>
-      </div>
-      <div class="col">
-        <p>{{ site.description | escape }}</p>
+        <!-- <p>{{ site.description | escape }}</p> -->
       </div>
     </div>
     {%- if site.bootstrap.social_links -%}
